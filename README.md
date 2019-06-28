@@ -16,7 +16,7 @@ You can find everything you need in utils.py
 distance_transfor.py is the main idea from the paper, that is an implementation of the 
 image transform.
 You should run it first to preprocess your trianing samples.
-
+![image](http://github.com/luckydog5/TabelDetection/raw/master/new_result/1403.6535_129.jpg)
 Train:
 
 You should provide  table images  and their corresponding coordinates,just like you train normal faster-rcnn, nothing special.
