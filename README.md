@@ -2,10 +2,12 @@
 Here is an implementation about the paper "Table Detection using deepLearing".
 
 Reference:
+
 1、https://blog.goodaudience.com/table-detection-using-deep-learning-7182918d778
 
 2、https://www.researchgate.net/publication/320243569_Table_Detection_Using_Deep_Learning
 3、https://github.com/RockyXu66/Faster_RCNN_for_Open_Images_Dataset_Keras
+
 Requirements:
 
 python3, tensorflow 1.12, keras 2.24, sk-learn.
@@ -13,8 +15,8 @@ python3, tensorflow 1.12, keras 2.24, sk-learn.
 
 You can find everything you need in utils.py
 
-distance_transfor.py is the main idea from the paper, that is an implementation of the 
-image transform.
+distance_transfor.py is the main idea from the paper, that is an implementation of the image transform.
+
 You should run it first to preprocess your trianing samples, after that, your training images may look like this image.
 
 
@@ -27,7 +29,7 @@ Train:
 
 You should provide  table images  and their corresponding coordinates,just like you train normal faster-rcnn, nothing special.
 
-eg.   path_to_your_train_samples/image_name.jpg       table_region [x_min,y_min,x_max,y_max,'table']  (x_min,y_min): top_left  (x_max,y_max):bottom_right
+eg.   path_to_your_train_samples/image_name.jpg   table_region [x_min,y_min,x_max,y_max,'table']  (x_min,y_min): top_left  (x_max,y_max):bottom_right
 
 All these are in a annotation.txt file.
 
@@ -51,6 +53,7 @@ some parameters:
 python train.py parameters
 
 Test:
+
 some parameters:
 	--image_path: Path to test images.
 	--result_path: Path to save results.
@@ -69,5 +72,6 @@ Here are some sample results.
 
 ![image](http://github.com/luckydog5/TabelDetection/raw/master/new_result/2.png)
 
+Besides you will get 2.txt and 1807.02216_22.txt file which contains the table coordinates.  [x_min,y_min,x_max,y_max]
 
 # TableDetection
