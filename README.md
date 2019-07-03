@@ -45,6 +45,12 @@ Faster_RCNN_for_Open_Images_Dataset_Keras/TableBank_data/Detection_data/Latex/im
 
 I will recommand Table_Bank dataset here, you only need to fill out application form and you will receive an eamil with download link.
 
+You need download resnet50 pre-trained  model weights first.
+
+
+
+
+
 some parameters:
 	
 	--base_path: path to your workdir.Where the resides.
@@ -86,6 +92,8 @@ some parameters:
 python test.py parameters.
 
 Outputs will be saved in result_path: image_name.jpg  image_name.txt.
+
+I will provide my config file and model weighs here:	https://pan.baidu.com/s/1CfWlaZYIkAQDVJ5XxsybVA
 
 Here are some sample results.
 
