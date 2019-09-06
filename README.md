@@ -25,7 +25,7 @@ You should run it first to preprocess your trianing samples, after that, your tr
 
 
 
-Train:
+Train Phase:
 
 You should provide  table images  and their corresponding coordinates,just like you train normal faster-rcnn, nothing special.
 
@@ -47,9 +47,53 @@ I will recommand Table_Bank dataset here, you only need to fill out application 
 
 You need download resnet50 pre-trained  model weights first.
 
+Annotations:
 
+TableBank Dataset:
 
+	--Detection_data   
 
+		--Latex
+
+			--images
+
+			--Latex.json
+
+			--url.csv
+
+		--Word
+
+			--images
+
+			--Word.json
+
+			--url.csv
+
+	--Recognition_data
+
+		--
+
+Here i only need the Detection_data.
+
+Use generate_annotation.py generate annotation.txt, you can use Latex or Word subset by adjusting the 
+
+following parameters.
+
+parameters are:
+
+	--type     Latex or Word subset to use.
+
+	--Latex_path     If the type is 'Latex',you need provide its path.
+
+	--Word_path      If the type is 'Word', you need provide its path.
+
+	--json_file 	 If the type is 'Latex', provide Latex.json path, otherwise Word.json.
+
+python generate_annotation.py  --parameters above.
+
+Then you will get the annotation.txt file.
+
+Start training...
 
 some parameters:
 	
